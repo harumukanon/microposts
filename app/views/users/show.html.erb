@@ -1,4 +1,9 @@
 <h1>
     <%= gravatar_for @user %>
     <%= @user.name %>
+    <br />
+    <center>
+        <h3>@<%= @user.area %></h3>
+        <h5>自己紹介:<%= @user.comment %></h5>
+    </center>
 </h1>
