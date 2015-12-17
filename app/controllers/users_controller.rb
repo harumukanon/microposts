@@ -28,13 +28,19 @@ class UsersController < ApplicationController
   end
   
   def update
-    if @user.update(user_params)
-      # 保存に成功した場合はユーザ画面へ戻す
-      flash[:success] = "User information was revised."
-      render 'show'
+    if @user.id == session[:user_id]
+      if @user.update(user_params)
+        # 保存に成功した場合はユーザ画面へ戻す
+        flash[:success] = "User information was revised."
+        render 'show'
+      else
+        #保存に失敗した場合は編集画面に戻す
+        remder 'edit'
+      end
     else
-      # 保存に失敗した場合は編集画面へ戻す
-      render 'edit'
+      # id違いの場合はエラーメッセージを出してトップページへ戻す
+      flash[:danger] = "Your request couldn't accepted."
+      redirect_to root_path
     end
   end
   
