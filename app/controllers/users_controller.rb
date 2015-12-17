@@ -35,7 +35,7 @@ class UsersController < ApplicationController
         render 'show'
       else
         #保存に失敗した場合は編集画面に戻す
-        remder 'edit'
+        render 'edit'
       end
     else
       # id違いの場合はエラーメッセージを出してトップページへ戻す
