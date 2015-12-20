@@ -9,12 +9,13 @@
             <h5>自己紹介:<%= @user.comment %></h5>
         </section>
     </aside>
-    <div class="col-md-8">
+  <div class="col-md-8">
+        <%= render 'follow_form' if logged_in? %>
         <% if @user.microposts.any? %>
-        <h3>Microposts (<%= @user.microposts.count %>)</h3>
-        <ol class="microposts">
+          <h3>Microposts (<%= @user.microposts.count %>)</h3>
+          <ol class="microposts">
             <%= render @microposts %>
-        </ol>
+          </ol>
         <% end %>
-    </div>
+  </div>
 </div>
