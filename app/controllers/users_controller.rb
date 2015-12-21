@@ -2,7 +2,6 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update]
   
   def show
-    @user = User.find(params[:id])
     @microposts = @user.microposts.order(created_at: :desc)
   end
   
@@ -45,6 +44,27 @@ class UsersController < ApplicationController
       redirect_to root_path
     end
   end
+  
+  def following
+    @user = User.find(params[:user_id])
+    if @user.id == session[:user_id]
+      @users = @user.following_users
+      render 'user_following'
+    else
+      redirect_to root_path
+    end
+  end
+  
+  def followers
+    @user = User.find(params[:user_id])
+    if @user.id == session[:user_id]
+      @users = @user.follower_users
+      render 'user_followers'
+    else
+      redirect_to root_path
+    end
+  end
+
   
   private
   
