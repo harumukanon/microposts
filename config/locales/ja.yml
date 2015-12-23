@@ -233,3 +233,5 @@ ja:
   welcome: Microposts へようこそ
   revised_message: 変更が保存されました
   could_not_accept: リクエストを受け付けられません
+  micropost_created: つぶやきました
+  micropost_deleted: 削除しました

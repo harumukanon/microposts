@@ -243,3 +243,5 @@ en:
   welcome: Welcome to the Microposts!
   revised_message: User information was revised.
   could_not_accept: Your request couldn't accepted.
+  micropost_created: Micropost created.
+  micropost_deleted: Micropost deleted.
