@@ -225,7 +225,7 @@ zh-TW:
   Profile: 檔案
   Settings: 設置
   Log out: 退出
-  Log in: 登入
+  log_in: 登入
   Users: 用戶
   Account: 帳戶
   view my profile: 我的檔案
@@ -233,7 +233,7 @@ zh-TW:
   posted: ・
   ago: 前的帖子
   Compose new micropost: 新的發帖
-  new user: 未有帳戶?
+  new_user: 未有帳戶?
   logged_in_as: "%s 已登入"
   invalid_email_password: 不正確的用戶名/密碼組合
   please_log_in: 請登入

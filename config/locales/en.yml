@@ -228,7 +228,7 @@ en:
   Profile: Profile
   Settings: Settings
   Log out: Log out
-  Log in: Log in
+  log_in: Log in
   Users: Users
   Account: Account
   view my profile: view my profile
@@ -236,7 +236,7 @@ en:
   posted: Posted
   ago: ago.
   Compose new micropost: Compose new micropost
-  new user: New User?
+  new_user: New User?
   logged_in_as: "logged in as %s."
   invalid_email_password: invalid email/password combination.
   please_log_in: Please log in.
