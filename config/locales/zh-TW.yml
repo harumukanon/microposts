@@ -214,9 +214,7 @@ zh-TW:
   sign_up_now: 免費註冊
   Follow: 追蹤
   Unfollow: 不追蹤
-  the form contains: 表格包含
-  error: 個錯誤
-  create my account: 建立帳戶
+  create_account: 建立帳戶
   sign up: 註冊
   is followed by: 被追蹤
   users: 個人
@@ -244,3 +242,6 @@ zh-TW:
   could_not_accept: 要求無法接受
   micropost_created: 帖子已發
   micropost_deleted: 帖子已删除
+  form_contains_error: "表格包含 %{count} 個錯誤"
+  
+  error_count: 個

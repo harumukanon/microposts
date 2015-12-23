@@ -10,4 +10,13 @@ module LocalesHelper
   def locale_label(locale)
     LOCALE_LABELS[locale] || "Unknown"
   end
+  
+  def error_count(count)
+    case I18n.locale
+    when :en
+      pluralize(count, t('error_count'))
+    else
+      "#{count}#{t('error_count')}"
+    end
+  end
 end

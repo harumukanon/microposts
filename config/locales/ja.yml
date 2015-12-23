@@ -193,25 +193,32 @@ ja:
       long: "%Y年%m月%d日(%a) %H時%M分%S秒 %z"
       short: "%y/%m/%d %H:%M"
     pm: 午後
-  Edit: 編集
+    
   Post: 投稿
+  Follow: フォローする
+  Unfollow: フォローをやめる
+ 
   name: 名前
   password: パスワード
   password_confirmation: パスワード確認
   area: 地域
   comment: コメント
   please introduce yourself in 500 characters: 自己紹介を500文字までどうぞ
-  Micropost Feed: フィード
-  sign_up_now: ユーザ登録
-  Follow: フォローする
-  Unfollow: フォローをやめる
-  the form contains: このフォームに含まれるのは
-  error: つのエラー
-  create my account: アカウント作成
-  sign up: サインアップ
-  is followed by: をフォローしているのは
-  users: 人
-  is following: がフォローしているのは
+  Edit: 編集
+  
+  password: パスワード
+        
+  edit: 編集
+      
+  sign_up: サインアップ
+  
+  create_account: アカウント作成
+        
+  title: ログイン
+  log_in: ログイン
+  new_user: アカウントをお持ちでないですか？
+  sign_up_now: ユーザ登録しましょう！
+        
   Home: ホーム
   user_following: フォロー
   user_followers: フォロワー
@@ -221,12 +228,7 @@ ja:
   Log in: ログイン
   Users: ユーザ
   Account: アカウント
-  view my profile: プロフィールを見る
-  delete: 削除
-  posted: つぶやいたのは
-  ago: 前
-  Compose new micropost: 新しくつぶやく
-  new user: アカウントをお持ちでないですか？ 
+  
   logged_in_as: "%s としてログインしました"
   invalid_email_password: Emailとパスワードの組み合わせが間違っています
   please_log_in: ログインしてください
@@ -235,3 +237,17 @@ ja:
   could_not_accept: リクエストを受け付けられません
   micropost_created: つぶやきました
   micropost_deleted: 削除しました
+  form_contains_error: "%{count}のエラーがあります"
+  
+  Micropost Feed: フィード
+  sign_up_now: ユーザ登録
+  is followed by: をフォローしているのは
+  users: 人
+  is following: がフォローしているのは
+  view my profile: プロフィールを見る
+  delete: 削除
+  posted: つぶやいたのは
+  ago: 前
+  Compose new micropost: 新しくつぶやく
+
+  error_count: 個

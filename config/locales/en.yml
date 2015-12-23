@@ -217,7 +217,7 @@ en:
   Unfollow: unfollow
   the form contains: The form contains
   error: error
-  create my account: Create my account
+  create_account: Create my account
   sign up: Sign up
   is followed by: is followed by
   users: users.
@@ -245,3 +245,6 @@ en:
   could_not_accept: Your request couldn't accepted.
   micropost_created: Micropost created.
   micropost_deleted: Micropost deleted.
+  form_contains_error: "The form contains %{count} error."
+  
+  error_count: count
