@@ -230,3 +230,6 @@ ja:
   logged_in_as: "%s としてログインしました"
   invalid_email_password: Emailとパスワードの組み合わせが間違っています
   please_log_in: ログインしてください
+  welcome: Microposts へようこそ
+  revised_message: 変更が保存されました
+  could_not_accept: リクエストを受け付けられません

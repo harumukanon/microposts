@@ -239,3 +239,6 @@ zh-TW:
   logged_in_as: "%s 已登入"
   invalid_email_password: 不正確的用戶名/密碼組合
   please_log_in: 請登入
+  welcome: 歡迎您註冊 Microposts
+  revised_message: 檔案已保存
+  could_not_accept: 要求無法接受

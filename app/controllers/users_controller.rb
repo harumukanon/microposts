@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:success] = "Welcome to the Sample App!"
+      flash[:success] = t('welcome')
       session[:user_id] = @user.id
       render 'show'
     else
@@ -32,7 +32,7 @@ class UsersController < ApplicationController
     if @user.id == session[:user_id]
       if @user.update(user_params)
         # 保存に成功した場合はユーザ画面へ戻す
-        flash[:success] = "User information was revised."
+        flash[:success] = t('revised_message')
         render 'show'
       else
         #保存に失敗した場合は編集画面に戻す
@@ -40,7 +40,7 @@ class UsersController < ApplicationController
       end
     else
       # id違いの場合はエラーメッセージを出してトップページへ戻す
-      flash[:danger] = "Your request couldn't accepted."
+      flash[:danger] = t('could_not_accept')
       redirect_to root_path
     end
   end

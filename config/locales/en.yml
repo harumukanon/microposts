@@ -240,3 +240,6 @@ en:
   logged_in_as: "logged in as %s."
   invalid_email_password: invalid email/password combination.
   please_log_in: Please log in.
+  welcome: Welcome to the Microposts!
+  revised_message: User information was revised.
+  could_not_accept: Your request couldn't accepted.
