@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  
   def new
   end
   
@@ -6,10 +7,10 @@ class SessionsController < ApplicationController
     @user = User.find_by(email: params[:session][:email].downcase)
     if User && @user.authenticate(params[:session][:password])
       session[:user_id] = @user.id
-      flash[:info] = "logged in as #{@user.name}"
+      flash[:info] = t('logged_in_as') % [ @user.name ]
       redirect_to @user
     else
-      flash[:danger] = 'invalid email/password combination'
+      flash[:danger] = t('invalid_email_password')
       render 'new'
     end
   end

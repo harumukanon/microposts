@@ -14,4 +14,9 @@ Rails.application.routes.draw do
   resources :sessons, only: [:new, :create, :destroy]
   resources :microposts
   resources :relationships, only: [:create, :destroy]
+  
+  scope '(:locale)', locale: /en|zh-TW/ do
+    resources :posts, param: :slug
+  end
+
 end

@@ -1,4 +1,4 @@
-<h1>Edit</h1>
+<h1><%= t('Edit') %></h1>
 <p>
   <%= gravatar_for @user %>
   <%= @user.name %>
@@ -8,25 +8,25 @@
         <%= form_for(@user) do |f| %>
         <%= render 'shared/error_messages', object: f.object %>
         
-        <%= f.label :name %>
+        <%= f.label t('name') %>
         <%= f.text_field :name, class: 'form-control' %>
         
         <%= f.label :email %>
         <%= f.email_field :email, class: 'form-control' %>
         
-        <%= f.label :password %>
+        <%= f.label t('password') %>
         <%= f.password_field :password, class: 'form-control', placeholder: "●●●●●●●" %>
         
-        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.label t('password_confirmation') %>
         <%= f.password_field :password_confirmation, class: 'form-control', placeholder: "●●●●●●●" %>
         
-        <%= f.label :area %>
+        <%= f.label t('area') %>
         <%= f.text_field :area, class: 'form-control' %>
         
-        <%= f.label :comment %>
-        <%= f.text_area :comment, class: 'form-control', placeholder: "自己紹介を500文字までどうぞ", rows: "10"  %>
+        <%= f.label t('comment') %>
+        <%= f.text_area :comment, class: 'form-control', placeholder: t('please introduce yourself in 500 characters'), rows: "10"  %>
         
-        <%= f.submit "Edit", class: "btn btn-primary" %>
+        <%= f.submit t('Edit'), class: "btn btn-primary" %>
     <% end %>
     
         
